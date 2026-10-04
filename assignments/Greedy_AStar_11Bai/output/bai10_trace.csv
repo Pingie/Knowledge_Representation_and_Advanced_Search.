@@ -1,0 +1,7 @@
+﻿index,event,node,note,before,after
+0,INIT,S,,,S(h=4)
+1,EXPAND,S,,S(h=4),A(h=1) | B(h=2) | C(h=3)
+2,EXPAND,A,,A(h=1) | B(h=2) | C(h=3),B(h=2) | C(h=3) | D(h=7)
+3,EXPAND,B,,B(h=2) | C(h=3) | D(h=7),E(h=1) | C(h=3) | D(h=7)
+4,EXPAND,E,,E(h=1) | C(h=3) | D(h=7),G(h=0) | C(h=3) | D(h=7)
+5,GOAL,G,,G(h=0) | C(h=3) | D(h=7),C(h=3) | D(h=7)

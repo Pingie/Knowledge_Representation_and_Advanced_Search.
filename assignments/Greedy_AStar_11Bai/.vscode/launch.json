@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "A* - nhan Enter xem tung buoc",
+      "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/run_demo.py",
+      "args": ["--algo", "astar", "--step"],
+      "cwd": "${workspaceFolder}", "console": "integratedTerminal", "justMyCode": true
+    },
+    {
+      "name": "File dang mo - dung breakpoint va F10",
+      "type": "debugpy", "request": "launch",
+      "program": "${file}", "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal", "justMyCode": true
+    }
+  ]
+}

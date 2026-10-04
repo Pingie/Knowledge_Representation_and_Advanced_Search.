@@ -1,0 +1,9 @@
+﻿index,event,node,note,before,after
+0,INIT,S,,,S<-None
+1,EXPAND,S,,S<-None,A<-S | B<-S
+2,EXPAND,A,,A<-S | B<-S,C<-A | D<-A | B<-S
+3,EXPAND,C,,C<-A | D<-A | B<-S,E<-C | D<-A | B<-S
+4,EXPAND,E,,E<-C | D<-A | B<-S,B<-E | D<-A | B<-S
+5,EXPAND,B,,B<-E | D<-A | B<-S,D<-B | G<-B | D<-A | B<-S
+6,EXPAND,D,,D<-B | G<-B | D<-A | B<-S,G<-D | G<-B | D<-A | B<-S
+7,GOAL,G,,G<-D | G<-B | D<-A | B<-S,G<-B | D<-A | B<-S

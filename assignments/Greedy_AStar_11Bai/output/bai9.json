@@ -1,0 +1,172 @@
+{
+  "bai": 9,
+  "algo": "ucs",
+  "case": "graph",
+  "input": "UCS_GRAPH S->G",
+  "start": "S",
+  "goal": "G",
+  "path": [
+    "S",
+    "B",
+    "D",
+    "C",
+    "G"
+  ],
+  "cost": 9,
+  "order": [
+    "S",
+    "B",
+    "A",
+    "D",
+    "C",
+    "G"
+  ],
+  "expanded": 5,
+  "skipped": 2,
+  "reopened": 0,
+  "max_frontier": 5,
+  "trace": [
+    {
+      "event": "INIT",
+      "node": "S",
+      "before": [],
+      "after": [
+        "S(g=0)"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "S",
+      "before": [
+        "S(g=0)"
+      ],
+      "after": [
+        "B(g=2)",
+        "A(g=8)",
+        "G(g=20)"
+      ],
+      "note": "A:g=8,parent=S; B:g=2,parent=S; G:g=20,parent=S"
+    },
+    {
+      "event": "EXPAND",
+      "node": "B",
+      "before": [
+        "B(g=2)",
+        "A(g=8)",
+        "G(g=20)"
+      ],
+      "after": [
+        "A(g=3)",
+        "D(g=4)",
+        "A(g=8)",
+        "G(g=20)"
+      ],
+      "note": "A:g=3,parent=B; D:g=4,parent=B"
+    },
+    {
+      "event": "EXPAND",
+      "node": "A",
+      "before": [
+        "A(g=3)",
+        "D(g=4)",
+        "A(g=8)",
+        "G(g=20)"
+      ],
+      "after": [
+        "D(g=4)",
+        "C(g=6)",
+        "A(g=8)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "note": "C:g=6,parent=A; G:g=12,parent=A"
+    },
+    {
+      "event": "EXPAND",
+      "node": "D",
+      "before": [
+        "D(g=4)",
+        "C(g=6)",
+        "A(g=8)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "after": [
+        "C(g=5)",
+        "C(g=6)",
+        "A(g=8)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "note": "C:g=5,parent=D"
+    },
+    {
+      "event": "EXPAND",
+      "node": "C",
+      "before": [
+        "C(g=5)",
+        "C(g=6)",
+        "A(g=8)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "after": [
+        "C(g=6)",
+        "A(g=8)",
+        "G(g=9)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "note": "G:g=9,parent=C"
+    },
+    {
+      "event": "SKIP",
+      "node": "C",
+      "before": [
+        "C(g=6)",
+        "A(g=8)",
+        "G(g=9)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "after": [
+        "A(g=8)",
+        "G(g=9)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "note": "old g=6"
+    },
+    {
+      "event": "SKIP",
+      "node": "A",
+      "before": [
+        "A(g=8)",
+        "G(g=9)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "after": [
+        "G(g=9)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "note": "old g=8"
+    },
+    {
+      "event": "GOAL",
+      "node": "G",
+      "before": [
+        "G(g=9)",
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "after": [
+        "G(g=12)",
+        "G(g=20)"
+      ],
+      "note": "g=9"
+    }
+  ]
+}

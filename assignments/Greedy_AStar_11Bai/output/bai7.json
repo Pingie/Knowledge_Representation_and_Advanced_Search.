@@ -1,0 +1,147 @@
+{
+  "bai": 7,
+  "algo": "dfs",
+  "case": "graph",
+  "input": "DFS_GRAPH S->G",
+  "start": "S",
+  "goal": "G",
+  "path": [
+    "S",
+    "A",
+    "C",
+    "E",
+    "B",
+    "D",
+    "G"
+  ],
+  "cost": 6,
+  "order": [
+    "S",
+    "A",
+    "C",
+    "E",
+    "B",
+    "D",
+    "G"
+  ],
+  "expanded": 6,
+  "skipped": 0,
+  "reopened": 0,
+  "max_frontier": 4,
+  "trace": [
+    {
+      "event": "INIT",
+      "node": "S",
+      "before": [],
+      "after": [
+        "S<-None"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "S",
+      "before": [
+        "S<-None"
+      ],
+      "after": [
+        "A<-S",
+        "B<-S"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "A",
+      "before": [
+        "A<-S",
+        "B<-S"
+      ],
+      "after": [
+        "C<-A",
+        "D<-A",
+        "B<-S"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "C",
+      "before": [
+        "C<-A",
+        "D<-A",
+        "B<-S"
+      ],
+      "after": [
+        "E<-C",
+        "D<-A",
+        "B<-S"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "E",
+      "before": [
+        "E<-C",
+        "D<-A",
+        "B<-S"
+      ],
+      "after": [
+        "B<-E",
+        "D<-A",
+        "B<-S"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "B",
+      "before": [
+        "B<-E",
+        "D<-A",
+        "B<-S"
+      ],
+      "after": [
+        "D<-B",
+        "G<-B",
+        "D<-A",
+        "B<-S"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "D",
+      "before": [
+        "D<-B",
+        "G<-B",
+        "D<-A",
+        "B<-S"
+      ],
+      "after": [
+        "G<-D",
+        "G<-B",
+        "D<-A",
+        "B<-S"
+      ],
+      "note": ""
+    },
+    {
+      "event": "GOAL",
+      "node": "G",
+      "before": [
+        "G<-D",
+        "G<-B",
+        "D<-A",
+        "B<-S"
+      ],
+      "after": [
+        "G<-B",
+        "D<-A",
+        "B<-S"
+      ],
+      "note": ""
+    }
+  ]
+}

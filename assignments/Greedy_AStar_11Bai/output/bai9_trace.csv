@@ -1,0 +1,10 @@
+﻿index,event,node,note,before,after
+0,INIT,S,,,S(g=0)
+1,EXPAND,S,"A:g=8,parent=S; B:g=2,parent=S; G:g=20,parent=S",S(g=0),B(g=2) | A(g=8) | G(g=20)
+2,EXPAND,B,"A:g=3,parent=B; D:g=4,parent=B",B(g=2) | A(g=8) | G(g=20),A(g=3) | D(g=4) | A(g=8) | G(g=20)
+3,EXPAND,A,"C:g=6,parent=A; G:g=12,parent=A",A(g=3) | D(g=4) | A(g=8) | G(g=20),D(g=4) | C(g=6) | A(g=8) | G(g=12) | G(g=20)
+4,EXPAND,D,"C:g=5,parent=D",D(g=4) | C(g=6) | A(g=8) | G(g=12) | G(g=20),C(g=5) | C(g=6) | A(g=8) | G(g=12) | G(g=20)
+5,EXPAND,C,"G:g=9,parent=C",C(g=5) | C(g=6) | A(g=8) | G(g=12) | G(g=20),C(g=6) | A(g=8) | G(g=9) | G(g=12) | G(g=20)
+6,SKIP,C,old g=6,C(g=6) | A(g=8) | G(g=9) | G(g=12) | G(g=20),A(g=8) | G(g=9) | G(g=12) | G(g=20)
+7,SKIP,A,old g=8,A(g=8) | G(g=9) | G(g=12) | G(g=20),G(g=9) | G(g=12) | G(g=20)
+8,GOAL,G,g=9,G(g=9) | G(g=12) | G(g=20),G(g=12) | G(g=20)

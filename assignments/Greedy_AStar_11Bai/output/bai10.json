@@ -1,0 +1,109 @@
+{
+  "bai": 10,
+  "algo": "greedy",
+  "case": "h",
+  "input": "GREEDY_GRAPH h S->G",
+  "start": "S",
+  "goal": "G",
+  "path": [
+    "S",
+    "B",
+    "E",
+    "G"
+  ],
+  "cost": 12,
+  "order": [
+    "S",
+    "A",
+    "B",
+    "E",
+    "G"
+  ],
+  "expanded": 4,
+  "skipped": 0,
+  "reopened": 0,
+  "max_frontier": 3,
+  "trace": [
+    {
+      "event": "INIT",
+      "node": "S",
+      "before": [],
+      "after": [
+        "S(h=4)"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "S",
+      "before": [
+        "S(h=4)"
+      ],
+      "after": [
+        "A(h=1)",
+        "B(h=2)",
+        "C(h=3)"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "A",
+      "before": [
+        "A(h=1)",
+        "B(h=2)",
+        "C(h=3)"
+      ],
+      "after": [
+        "B(h=2)",
+        "C(h=3)",
+        "D(h=7)"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "B",
+      "before": [
+        "B(h=2)",
+        "C(h=3)",
+        "D(h=7)"
+      ],
+      "after": [
+        "E(h=1)",
+        "C(h=3)",
+        "D(h=7)"
+      ],
+      "note": ""
+    },
+    {
+      "event": "EXPAND",
+      "node": "E",
+      "before": [
+        "E(h=1)",
+        "C(h=3)",
+        "D(h=7)"
+      ],
+      "after": [
+        "G(h=0)",
+        "C(h=3)",
+        "D(h=7)"
+      ],
+      "note": ""
+    },
+    {
+      "event": "GOAL",
+      "node": "G",
+      "before": [
+        "G(h=0)",
+        "C(h=3)",
+        "D(h=7)"
+      ],
+      "after": [
+        "C(h=3)",
+        "D(h=7)"
+      ],
+      "note": ""
+    }
+  ]
+}
