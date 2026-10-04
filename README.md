@@ -15,13 +15,12 @@ The course covers advanced concepts in Artificial Intelligence, focusing on how 
 *   `projects/`: Final project implementation applying KRAS algorithms.
 
 ## 🛠️ Technologies & Tools
-*   **Language:** Python 3.x / Java / C++ (Adjust accordingly)
-*   **Libraries:** NetworkX, NLTK, OWLready2, etc. (Adjust accordingly)
+*   **Language:** Python
+*   
 
 ## 🚀 How to Run
 To run the projects or assignments, clone this repository and install the required dependencies:
 
 ```bash
 git clone [https://github.com/your-username/knowledge-representation-advanced-search.git](https://github.com/your-username/knowledge-representation-advanced-search.git)
-cd knowledge-representation-advanced-search
 pip install -r requirements.txt
